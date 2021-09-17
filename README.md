@@ -1,3 +1,3 @@
-Node.js Calgry
+Resource Mapping Tool for New World
 
-This project it's to learn HTML, CSS, JS, Node.js and MongoDB
+This mapping tool is for players of the MMO game New World to locate and gather resouces in the area of Winsward and First Light. 
