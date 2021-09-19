@@ -1,0 +1,18 @@
+table, td{
+    border-collapse: collapse;
+    background-color: #e4d1d1;
+}
+ul{
+    list-style-type: square; ;
+}
+td{
+    padding: 5px
+}
+td:first-of-type{
+    font-weight: bold;
+    text-align: center;
+}
+.categories, .section-name{
+    text-align: center;
+    font-weight: bold;
+}

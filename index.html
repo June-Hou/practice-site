@@ -1,33 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <link rel="stylesheet" href="css/normalize.css.css">
+  <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Practice Site</title>
+  <title>CSS</title>
 </head>
-
-<style>
-  img {
-    width: 300px;
-    border-radius: 150px;
-  }
-  p {
-    font-weight: bold;
-  }
-</style>
-
 <body>
-  <img src="images/index.jpg">
-  <h1>New World Open Beta</h1>
-  <h2>Choose area</h2>
-  <a href="winsward.html">Winsward</a>
-  <a href="firstlight.html">First Light</a>
-  <script>
-    // This is my first JavaScrip code!
-    console.log('Hello World');
-  </script>
+  <table>
+    <thead>
+      <th colspan="4">CSS BASICS</th>
+    </thead>
+    <tbody>
+      <tr class="categories">
+        <td>#</td>
+        <td>Section</td>
+        <td>Notes</td>
+        <td>Codes</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td class="section-name">Introduction</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td class="section-name">Providing CSS</td>
+        <td>
+          <ul>
+            <li>seperation of concerns</li>
+            <li>the self-closing style link default and the alternative way of writing link element</li>
+            <li>three alternative ways of overriding style elements</li>
+          </ul>
+      </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td class="section-name">Normalize CSS</td>
+        <td>
+          <ul>
+            <li>margin problem caused by normalize CSS</li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td class="section-name">Basic Selectors</td>
+        <td>
+          <ul>
+            <li>type</li>
+            <li>id</li>
+            <li>class</li>
+            <li>attribute</li>
+            <li>how to open href in a new tab</li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td class="section-name">Relational Selectors</td>
+        <td>
+          <ul>
+            <li>cleaner format</li>
+            <li>can be fragile, not as fast</li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td class="section-name">Pseudo-Class Selectors</td>
+        <td>
+          <ul>
+            <li>difference of droping the type before select a class 
+                p.first==>.first</li>
+            <li>first-child/first-of-type
+                last-childe/last-of-type</li>
+            <li>change color of the odd/even/3n items in a list</li>
+            <li>hyperlink color</li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td class="section-name">Pseudo-Element Selectors</td>
+        <td>
+          <ul>
+            <li>capitalize first letter (like in books)</li>
+            <li>change color of highlighted sections caused by hovering</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>p::first-letter</li>
+            <li>p::first-line</li>
+            <li>::selection{background-color}</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td class="section-name">Selectors Specifity</td>
+        <td>give more specific command by selector specifity number(0,0,0)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td class="section-name">Inheritance</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td class="section-name">Colors</td>
+        <td>
+          <ul>
+            <li>Google color picker</li>
+            <li>rgb/rgba/hex/hsla</li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td class="section-name">Gradients</td>
+        <td>Gradient generator: cssgradient.io</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td class="section-name">Shadows</td>
+        <td>text shadow that goes with many colors</td>
+        <td>rgba(0,0,0,0.2) </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
-
 </html>
