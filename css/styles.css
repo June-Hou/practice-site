@@ -1,23 +1,23 @@
 table{
     width: 1200px;
+    background-color: #f0f0f0;
     border-collapse: collapse;
     position: absolute; top: 8%; left: 10%; right: 10%; bottom: 10%;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-bottom: 10px solid #9fa9a3;
-    background-color: #f0f0f0;
-    border-radius: 2% 2% 0 0;
-    overflow: hidden;
+    border-radius: 5px 5px 0 0;
 }
 
 td{
     padding: 15px;
 }
 
-thead th {
+th{
     padding: 10px;
     background-color: #9fa9a3;
     color: seashell;
     text-shadow: 2px 2px rgba(0,0,0,0.2);
+    border-radius: 5px 5px 0 0;
 }
 
 tbody td:first-of-type{
@@ -47,4 +47,7 @@ tbody tr:nth-of-type(odd) {
 }
 
 ::selection {background-color: #e3e0cc;}
-
+tr:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+}
