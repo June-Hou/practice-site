@@ -9,140 +9,288 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <table>
-    <thead>
-      <th colspan="4">CSS BASICS</th>
-    </thead>
-    <tbody>
-      <tr class="categories">
-        <td>#</td>
-        <td>Section</td>
-        <td>Notes</td>
-        <td>Codes</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td class="section-name">Introduction</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td class="section-name">Providing CSS</td>
-        <td>
-          <ul>
-            <li>seperation of concerns</li>
-            <li>the self-closing style link default and the alternative way of writing link element</li>
-            <li>three alternative ways of overriding style elements</li>
-          </ul>
-      </td>
-        <td>&lt;link rel="stylesheet" href="css/styles.css"&gt;</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td class="section-name">Normalize CSS</td>
-        <td>
-          <ul>
-            <li>margin problem caused by normalize CSS</li>
-          </ul>
+  <div class="htmlbasics">
+    <table class="html-basics">
+      <thead>
+        <th colspan="4">HTML BASICS</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#</td>
+          <td>Section</td>
+          <td>Notes</td>
+          <td>Codes</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="section-name">Introduction</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="section-name">The Head Section</td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="section-name">Text</td>
+          <td>
+            <ul>
+              <li>The emphasis element displays content in Italic/Bold and helps the search engine to locate important words. </li>
+              <li>Shortcut to wrap a sentence in command palette</li>
+            </ul>
+          </td>
+          <td>
+              &lt;em&gt; &lt;strong&gt;
+              <br>highlight sentence, shift+ctrl+p, choose "wrap with abbreviation", write element code
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="section-name">Entities</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;All entities have &;</td>
+          <td>&amp;lt; &amp;gt; &amp;nbsp;</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="section-name">Hyperlinks</td>
+          <td>
+            <ul>
+              <li>Using an image as hyperlink</li>
+              <li>Adding "Home Page" on a page with / representing the root of the website 
+                  <br>and ../ representing the upper folder (can go three levels up)</li>
+                  <li>Relative address and abolute address</li>
+                  <li>Prompting the user to download an image instead of showing</li>
+                  <li>Jumping to a section and jumping to top </li>
+                  <li>Linking an external website</li>
+                  <li>Opening hyperlink in a new tab</li>
+                  <li>Linking to emails</li>
+            </ul>
+          </td>
+          <td>
+              &lt;a hrep="address/name of linked page">
+                  &lt;img src="image source" alt=""> 
+               &lt;/a>
+              <br>&lt;a href="../index.html">Home Page&lt;/a>
+              <br>&lt;a href="/index.html">Home Page&lt;/a>
+              <br>&lt;a href="image source" download>Photo of Me&lt;/a>
+              <br>give an id to the section that you want to jump to, then &lt;a href="#section id">Section</a>
+              <br>&lt;a href="#">Jump to Top&lt;/a>
+              <br>&lt;a href="https://address of external website">External Website&lt;/a>
+              <br>&lt;a href="https://address of external website" target="_blank">External Website&lt;/a>
+              <br>&lt;a href="mailto:email address">Email Me&lt;/a>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="section-name">Images</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;Displaying image in its original ratio in a fixed image box size</td>
+          <td>img {
+              <br> &nbsp; &nbsp; width: 200px; height: 200px;
+              <br> &nbsp; &nbsp; object-fit: cover/fill etc.;
+              <br>  &nbsp; &nbsp; &nbsp; &nbsp;}
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="section-name">Video and Audio</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;Checking if different browsers support a certain elememt (caniuse.com)</td>
+          <td>&lt;video/audio control autoplay loop src="">Your browser doesn't support videos&lt;/video/audio>&lt;/td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="section-name">Lists</td>
+          <td>
+              <ul>
+                  <li>uls are commonly used for navigation sections on websites.</li>
+                  <li>Changing the bullets types</li>
+                  <li>Nested lists to create a hierarchy </li>
+              </ul>
+          </td>
+          <td>ul li; ol li; dl dt dd;
+              <br>ul {list-style-type}
+          </td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="section-name">Tables</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="section-name">Containers</td>
+          <td>
+            <ul>
+              <li>div is a block level element and it always starts with a new line and fills up the entire available space.</li>
+              <li>Using &lt;span> to have any inline sections highlighted</li>
+              <li>
+                  <dl>
+                      <dt>Shortcut to multiple cursor editing
+                          <dd>highlighte ==> crtl+d ==> highlight ==> new code ==> Escape twice</dd>
+                      </dt>
+                  </dl>
+              </li>
+            </ul>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="section-name">Semantic Elements</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;Semantic elements helps search engines better understand webpages contents.</td>
+          <td>&lt;article>
+              <br>&lt;figure>
+              <br>&lt;mark>(yellow highlight by default)
+              <br>&lt;time> (can also add attribute datetime="2021-01-01 17:00" to add machine-readable time)</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td class="section-name">Structuring a Webpage</td>
+          <td>&nbsp;</td>
+          <td>&lt;main>&lt;section>&lt;header>&lt;nav>&lt;footer>&lt;aside></td>
+        </tr> 
+    </table>
+  </div>
+
+<br>
+<br>
+
+  <div class="cssbasics">
+    <table class="css-basics">
+      <thead>
+        <th colspan="4">CSS BASICS</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#</td>
+          <td>Section</td>
+          <td>Notes</td>
+          <td>Codes</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="section-name">Introduction</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="section-name">Providing CSS</td>
+          <td>
+            <ul>
+              <li>seperation of concerns</li>
+              <li>the self-closing style link default and the alternative way of writing link element</li>
+              <li>three alternative ways of overriding style elements</li>
+            </ul>
         </td>
-        <td>
-          https://necolas.github.io 
-          <br> &lt;link rel="stylesheet" href="css/normalize.css"&gt;
-        </td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td class="section-name">Basic Selectors</td>
-        <td>
-          <ul>
-            <li>type</li>
-            <li>id</li>
-            <li>class</li>
-            <li>attribute</li>
-            <li>how to open href in a new tab</li>
-          </ul>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td class="section-name">Relational Selectors</td>
-        <td>
-          <ul>
-            <li>cleaner format</li>
-            <li>can be fragile, not as fast</li>
-          </ul>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td class="section-name">Pseudo-Class Selectors</td>
-        <td>
-          <ul>
-            <li>difference of droping the type before select a class</li>
-            <li>first-child/first-of-type
-                last-childe/last-of-type</li>
-            <li>change color of the odd/even/3n items in a list</li>
-            <li>hyperlink color</li>
-          </ul>
-        </td>
-        <td>p.first ==> .first</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td class="section-name">Pseudo-Element Selectors</td>
-        <td>
-          <ul>
-            <li>capitalize first letter (like in books)</li>
-            <li>change color of highlighted sections caused by hovering</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>p::first-letter</li>
-            <li>p::first-line</li>
-            <li>::selection{background-color}</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td class="section-name">Selectors Specifity</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; give more specific command by selector specifity number(0,0,0)</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td class="section-name">Inheritance</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td class="section-name">Colors</td>
-        <td>
-          <ul>
-            <li>Google color picker</li>
-            <li>rgb/rgba/hex/hsla</li>
-          </ul>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td class="section-name">Gradients</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gradient generator: cssgradient.io</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td class="section-name">Shadows</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text shadow that goes with many colors</td>
-        <td>box-shadow: 0 0 20px rgba(0,0,0,0.2)</td>
-      </tr>
-    </tbody>
-  </table>
+          <td>&lt;link rel="stylesheet" href="css/styles.css"&gt;</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="section-name">Normalize CSS</td>
+          <td>
+            <ul>
+              <li>margin problem caused by normalize CSS</li>
+            </ul>
+          </td>
+          <td>
+            https://necolas.github.io 
+            <br> &lt;link rel="stylesheet" href="css/normalize.css"&gt;
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="section-name">Basic Selectors</td>
+          <td>
+            <ul>
+              <li>type</li>
+              <li>id</li>
+              <li>class</li>
+              <li>attribute</li>
+              <li>how to open href in a new tab</li>
+            </ul>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="section-name">Relational Selectors</td>
+          <td>
+            <ul>
+              <li>cleaner format</li>
+              <li>can be fragile, not as fast</li>
+            </ul>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="section-name">Pseudo-Class Selectors</td>
+          <td>
+            <ul>
+              <li>difference of droping the type before select a class</li>
+              <li>first-child/first-of-type
+                  last-childe/last-of-type</li>
+              <li>change color of the odd/even/3n items in a list</li>
+              <li>hyperlink color</li>
+            </ul>
+          </td>
+          <td>p.first ==> .first</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="section-name">Pseudo-Element Selectors</td>
+          <td>
+            <ul>
+              <li>capitalize first letter (like in books)</li>
+              <li>change color of highlighted sections caused by hovering</li>
+            </ul>
+          </td>
+          <td>
+              p::first-letter
+              <br>p::first-line
+              <br>::selection{background-color}
+          </td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="section-name">Selectors Specifity</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; give more specific command by selector specifity number(0,0,0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="section-name">Inheritance</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="section-name">Colors</td>
+          <td>
+            <ul>
+              <li>Google color picker</li>
+              <li>rgb/rgba/hex/hsla</li>
+            </ul>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="section-name">Gradients</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gradient generator: cssgradient.io</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td class="section-name">Shadows</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text shadow that goes with many colors</td>
+          <td>box-shadow: 0 0 20px rgba(0,0,0,0.2)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>

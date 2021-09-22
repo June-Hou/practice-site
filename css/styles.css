@@ -1,10 +1,28 @@
-table{
+.htmlbasics {
+   margin: auto;
+   width: 1400px;
+}
+.cssbasics {
+    margin: auto;
     width: 1200px;
+}
+
+
+.html-basics {
+    width: 1400px;
     background-color: #f0f0f0;
     border-collapse: collapse;
-    position: absolute; top: 8%; left: 10%; right: 10%; bottom: 10%;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-bottom: 10px solid #9fa9a3;
+    border-radius: 5px 5px 0 0;
+}
+
+.css-basics {
+    width: 1200px;
+    background-color: #e0e2e4;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-bottom: 10px solid #96897f;
     border-radius: 5px 5px 0 0;
 }
 
@@ -12,7 +30,7 @@ td{
     padding: 15px;
 }
 
-th{
+.html-basics th{
     padding: 10px;
     background-color: #9fa9a3;
     color: seashell;
@@ -20,7 +38,21 @@ th{
     border-radius: 5px 5px 0 0;
 }
 
-tbody td:first-of-type{
+.css-basics th{
+    padding: 10px;
+    background-color: #96897f;
+    color: seashell;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+    border-radius: 5px 5px 0 0;
+}
+
+.html-basics td:first-of-type{
+    width: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.css-basics td:first-of-type{
     width: 50px;
     font-weight: bold;
     text-align: center;
@@ -32,7 +64,12 @@ tbody .section-name{
     font-weight: bold;
 }
 
-tbody tr:first-of-type{
+.html-basics tbody tr:first-of-type{
+    font-weight: bold;
+    text-align: center;
+}
+
+.css-basics tbody tr:first-of-type{
     font-weight: bold;
     text-align: center;
 }
@@ -41,12 +78,16 @@ ul{
     list-style-type: square; ;
 }
 
-tbody tr:nth-of-type(odd) {
+.htmlbasics tbody tr:nth-of-type(odd) {
     background-color: #c5d5c5;
-    border-bottom: 5px #9fa9a3;
+}
+
+.css-basics tbody tr:nth-of-type(odd) {
+    background-color: #c6bcb6;
 }
 
 ::selection {background-color: #e3e0cc;}
+
 tr:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     transform: scale(1.03);
